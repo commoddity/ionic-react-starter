@@ -1,6 +1,6 @@
-import { Spinner } from "@atoms";
-import { BrightnessType, ColorType, SizeType } from "@theme/types";
-import { colorMixin, widthMixin } from "@theme/mixins";
+import { Spinner } from "~atoms";
+import { BrightnessType, ColorType, SizeType } from "~theme/types";
+import { colorMixin, widthMixin } from "~theme/mixins";
 import { PRIMARY_BUTTON_SIZE } from "./constants";
 
 export type PrimaryButtonTemplateProps = {

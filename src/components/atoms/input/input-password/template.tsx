@@ -1,4 +1,4 @@
-import { Icon } from "@atoms";
+import { Icon } from "~atoms";
 import { usePasswordInputTemplate } from "./template-logic";
 
 export type PasswordInputTemplateProps = {
@@ -48,9 +48,7 @@ export const PasswordInputTemplate = ({
             }`}
           />
           <div
-            className={`absolute ${
-              isActive ? "is-focused" : "not-focused"
-            } h-8`}
+            className={`absolute ${isActive ? "is-focused" : "not-focused"} h-8`}
             onClick={toggleFocus}
           >
             {placeholder}
@@ -62,17 +60,12 @@ export const PasswordInputTemplate = ({
             className="block focus:outline-none"
             onClick={togglePasswordVisibility}
           >
-            <Icon
-              variant={passwordHidden ? "passwordShow" : "passwordHide"}
-              size={24}
-            />
+            <Icon variant={passwordHidden ? "passwordShow" : "passwordHide"} size={24} />
           </button>
         </div>
       </div>
       {errorMessage ? (
-        <div className="text-left text-xs text-orange-600 ml-2 mt-1">
-          {errorMessage}
-        </div>
+        <div className="text-left text-xs text-orange-600 ml-2 mt-1">{errorMessage}</div>
       ) : null}
     </div>
   );

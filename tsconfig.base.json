@@ -17,13 +17,13 @@
     "jsx": "react-jsx",
     "baseUrl": "src",
     "paths": {
-      "@atoms": ["./components/atoms"],
-      "@molecules": ["./components/molecules"],
-      "@organisms": ["./components/organisms"],
-      "@symbiotes/*": ["./components/symbiotes/*"],
-      "@pages": ["./pages/index.tsx"],
-      "@pages/*": ["./pages/*"],
-      "@theme/*": ["./theme/*"]
+      "~atoms": ["./components/atoms"],
+      "~molecules": ["./components/molecules"],
+      "~organisms": ["./components/organisms"],
+      "~symbiotes": ["./components/symbiotes"],
+      "~pages": ["./pages/index.tsx"],
+      "~pages/*": ["./pages/*"],
+      "~theme/*": ["./theme/*"]
     }
   },
   "include": ["src"]
